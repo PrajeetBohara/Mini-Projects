@@ -2,9 +2,9 @@ import random
 import smtplib
 import datetime as dt
 
-my_email = "halloapp77@gmail.com"
-password = "mydduamddtteyhby"
-receiver = "rpgjohnraven@gmail.com"
+my_email = "your sender email"
+password = "your sender password"
+receiver = "your receiver email"
 with open("quotes.txt", encoding="utf8") as file:
     content = file.readlines()
     quote = random.choice(content)
