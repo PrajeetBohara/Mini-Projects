@@ -1,5 +1,5 @@
 import random
-import smtplib
+import smtplib //simple mail transfer protocol
 import datetime as dt
 
 my_email = "your sender email"
@@ -19,6 +19,6 @@ while my_date == current_date:
     connection.starttls()
     connection.login(user=my_email, password=password)
     connection.sendmail(from_addr=my_email, to_addrs=receiver, msg="Subject: Demo\n\n Check")
-    connection.close()
+    connection.close() //to freeup some resources
 
 
